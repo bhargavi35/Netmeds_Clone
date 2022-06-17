@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>signup</title>
-    <link
-      rel="shortcut icon"
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+        type="image/x-icon" />
     <style>
         * {
             padding: 0px;
@@ -115,10 +113,11 @@
             display: flex;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: #fff !important;
         }
+
         input {
             height: 40px;
             width: 600px;
@@ -139,7 +138,7 @@
             <a href="./index.html">
                 <div id="logo">
                     <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
-                 </div>
+                </div>
             </a>
             <div>
                 <input placeholder="Search for medicine & wellness" type="text" class="form-control"
@@ -148,9 +147,9 @@
             </div>
             <div id="top3">
                 <span><i class="fa-solid fa-file-lines"></i><span class="anu"><a
-                            style="color: white;text-decoration: none;" >Upload</span></span>
-                <span id="ai"><i class="fa-solid fa-cart-shopping prdctt"></i><span id="cart"
-                        class="one prdctt"><a href="./cart.html">Cart</a></span></span> <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            style="color: white;text-decoration: none;">Upload</span></span>
+                <span id="ai"><i class="fa-solid fa-cart-shopping prdctt"></i><span id="cart" class="one prdctt"><a
+                            href="./cart.html">Cart</a></span></span> <svg xmlns="http://www.w3.org/2000/svg" width="30"
                     height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                     <path
                         d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
@@ -160,35 +159,35 @@
                         style="text-decoration: none; color:#fff">Sign in / Sign up</a></span>
             </div>
         </div>
-</div>
-        <div id="signup">
-            <div id="image">
-                <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" />
-            </div>
-            <div id="form">
-                <h2 id="sign">Sign In / Sign Up</h2>
-                <p>
-                    Sign up or sign in to access your orders, special offers, health tips
-                    and more!
-                </p>
-                <h5 style="color:#24aeb1 ; padding: 10px;">PHONE NUMBER</h5>
-                <h3>
-                    +91 |
-                    <input id="input" type="number" placeholder="Enter your mobile no" />
-                </h3>
-                <!-- <a href="otp.html"><input id="button" value="USE OTP"></a> -->
-
-                <button id="button" onclick="func()">USE OTP</button>
-            </div>
+    </div>
+    <div id="signup">
+        <div id="image">
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" />
         </div>
-        <div id="terms">
+        <div id="form">
+            <h2 id="sign">Sign In / Sign Up</h2>
             <p>
-                By continuing you agree to our
-                <span><a href="https://masaischool.com/terms">Terms of Service</a></span>
-                and
-                <span><a href="https://masaischool.com/privacy">Privacy& Legal Policy</a></span>
+                Sign up or sign in to access your orders, special offers, health tips
+                and more!
             </p>
+            <h5 style="color:#24aeb1 ; padding: 10px;">PHONE NUMBER</h5>
+            <h3>
+                +91 |
+                <input id="input" type="number" placeholder="Enter your mobile no" />
+            </h3>
+            <!-- <a href="otp.html"><input id="button" value="USE OTP"></a> -->
+
+            <button id="button" onclick="func()">USE OTP</button>
         </div>
+    </div>
+    <div id="terms">
+        <p>
+            By continuing you agree to our
+            <span><a href="https://masaischool.com/terms">Terms of Service</a></span>
+            and
+            <span><a href="https://masaischool.com/privacy">Privacy& Legal Policy</a></span>
+        </p>
+    </div>
 </body>
 
 </html>
@@ -208,13 +207,13 @@
     }
 
 
-    
-let arr = JSON.parse(localStorage.getItem("data"))
-if (arr !== null) {
-    let final = document.getElementById("inpt")
-    arr.forEach(function (el) {
-        final.innerText = el.first
-        final.href = "acinfo.html"
-    })
-}
+
+    let arr = JSON.parse(localStorage.getItem("data"))
+    if (arr !== null) {
+        let final = document.getElementById("inpt")
+        arr.forEach(function (el) {
+            final.innerText = el.first
+            final.href = "acinfo.html"
+        })
+    }
 </script>

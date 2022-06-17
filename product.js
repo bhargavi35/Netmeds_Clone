@@ -25,14 +25,14 @@ if (loadData == "CE") {
   backUp = 0;
   localStorage.setItem("loadData1", "CE");
 } else {
-  let ran = Math.floor(Math.random() *1);
+  let ran = Math.floor(Math.random() * 1);
   console.log(ran);
   data = dataFuncArr[ran]();
   backUp = ran;
   let key;
   if (ran == 0) {
     key = "CE";
-  }  else {
+  } else {
     key = "NUll";
   }
 
@@ -75,7 +75,7 @@ function appendPrducts(data) {
     let title = create("h5");
     title.innerText = name;
 
-    
+
     let priceH = create("h4");
     priceH.innerHTML = `Best Price* <span>Rs ${price}</span>`;
 
@@ -92,7 +92,7 @@ function appendPrducts(data) {
     Buttondiv.setAttribute("id", idDiv);
     let button = buttonCreate(
       Buttondiv,
-      { image,  name, price, strike },
+      { image, name, price, strike },
       idDiv
     );
 
