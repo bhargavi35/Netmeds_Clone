@@ -60,7 +60,7 @@ a {
     display: flex;
     padding-left: 220px;
     gap: 30px;
-    
+
 }
 
 #down>div {
@@ -175,46 +175,50 @@ i {
     color: white;
 }
 
-#ai{
+#ai {
     position: relative;
     cursor: pointer;
     color: white !important;
 }
 
 
-#alexa{
+#alexa {
     height: 150px;
     width: 320px;
     position: absolute;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: rgb(243,247,251);
+    background-color: rgb(243, 247, 251);
     top: 60%;
-    border-radius:  10px; 
+    border-radius: 10px;
     padding: 10px;
     opacity: 0;
- 
+
 }
-#ai+#alexa:hover{
+
+#ai+#alexa:hover {
     opacity: 1;
     z-index: 1;
 }
 
-#b,#c,#d{
+#b,
+#c,
+#d {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
 }
 
-#d>button{
-border: 0px;
-border-radius: 10px;
-background-color: rgb(50,174,177);
-color: white;
-width: 160px;
-height: 35px;
+#d>button {
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(50, 174, 177);
+    color: white;
+    width: 160px;
+    height: 35px;
 }
-#d>h4{
-color: rgb(238,67,128);
+
+#d>h4 {
+    color: rgb(238, 67, 128);
 }
 
 #low {
@@ -233,9 +237,11 @@ color: rgb(238,67,128);
     font-size: 16px;
     padding-top: 10px;
 }
-#script p{
+
+#script p {
     color: black;
 }
+
 #points1 {
     position: absolute;
     top: 80%;
@@ -313,13 +319,14 @@ p,
 li {
     color: #5b5f64;
     /* line-height: 30px; */
-    
+
 }
 
 span {
     color: #575b60 !important;
-    
+
 }
+
 /* ftrjs */
 #nani {
     display: flex;
@@ -353,15 +360,19 @@ hr {
     gap: 10px;
     margin-top: 40px;
 }
-#adc{
+
+#adc {
     display: flex;
     gap: 10%;
 }
-#adc p{
+
+#adc p {
     color: #85888c;
 
 }
-#footer1 p, #footer1 h5{
+
+#footer1 p,
+#footer1 h5 {
     padding-left: 25px;
     padding-right: 25px;
 
