@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product</title>
+    <link rel="stylesheet" href="./navbar.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Lato", sans-serif;
+    }
+
+    body {
+      background-color: #f3f3f3 !important;
+    }
+
+    #bannerImg > img {
+      border-radius: 10px !important;
+      width: 100% !important;
+    }
+
+    #bannerImg {
+      height: 180px;
+      /* margin: 5px; */
+      border-radius: 10px;
+      margin: auto;
+      margin-bottom: 40px;
+      padding: 1px;
+    }
+
+    button {
+      border: none;
+      background-color: #24aeb1;
+      color: white;
+      height: 30px;
+      width: 180px;
+      border-radius: 5px;
+    }
+    #bannerImg > h2 {
+      margin-left: 42px;
+      margin-top: 30px;
+      color: #1d2135;
+      font-weight: 550 !important;
+    }
+
+    #sort {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+    }
+
+    #sortByCatagory {
+      padding: 10px 20px;
+      background-color: white;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+   
+    
+
+    #nanii {
+      display: grid;
+      grid-template-columns: 20% 78%;
+      gap: 10px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    #appendProd {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    #appendProd > h5 {
+      margin: 10px;
+      margin-bottom: 25px;
+      font-size: 85% !important;
+      color: rgb(85, 85, 85);
+    }
+
+    #appendProd > div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    #appendProd > div > div {
+      padding: 10px 10px;
+      border: 1px solid rgb(202, 197, 197);
+      border-radius: 10px;
+    }
+
+    #appendProd > div > div > img {
+      display: block;
+      margin: auto;
+    }
+
+    #productAddToCartButton {
+      width: 95%;
+      height: 40px;
+      display: block;
+      margin: auto;
+      background-color: #24aeb1;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+
+    #productAddToCartButton > h4 {
+      margin: auto;
+      font-size: 107% !important;
+    }
+
+    #appendProd > div > div > h5 {
+      height: 40px;
+      font-size: 101% !important;
+    }
+
+    #strikedOffPrice,
+    #mkt {
+      color: rgb(102, 102, 102);
+      font-size: 85% !important;
+      font-weight: 510 !important;
+      margin: 10px auto;
+    }
+
+    #strikedOffPrice > span {
+      text-decoration: line-through;
+    }
+
+    #appendProd > div > div > h4 {
+      font-size: 87% !important;
+      color: rgb(102, 102, 102);
+      margin: 10px auto;
+    }
+
+    #appendProd > div > div > h4 > span {
+      font-size: 125% !important;
+      color: #ef4281 !important;
+    }
+
+    #minusButton,
+    #plusButton {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      background-color: white;
+      border: 1px solid rgb(199, 199, 199);
+      font-size: 130% !important;
+      font-weight: 0 !important;
+      text-align: center;
+      color: rgb(102, 102, 102);
+    }
+
+    #productCount {
+      display: inline;
+      margin: 0px 10px;
+      font-size: 105% !important;
+    }
+
+    /* sidebar */
+
+    #sidebar {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+    }
+
+    #category {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 100%;
+      height: 250px;
+      overflow: scroll;
+      padding: 5px;
+      background-color: white;
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    #name {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      padding: 5px;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+    }
+
+    #category p {
+      color: grey;
+      cursor: pointer;
+    }
+
+    #category p:hover {
+      color: black;
+      font-size: 17px;
+      text-decoration: underline;
+    }
+
+    #category .fa-solid {
+      font-size: 10px;
+    }
+
+    #category .fa-solid:hover {
+      transform: rotate(90deg);
+    }
+
+    #filter {
+      margin-top: 50px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    #inp {
+      width: 97%;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: grey;
+    }
+
+    label:hover {
+      font-size: 17px;
+    }
+
+    #inp:focus {
+      border: none;
+    }
+
+    #vol {
+      width: 97%;
+    }
+  </style>
+
+  <body>
+    <div id="navbar"></div>
+    <div id="nanii">
+      <div id="sidebar"></div>
+      <div id="showData">
+        <div id="bannerImg"></div>
+        <div id="sortByCatagory"></div>
+
+        <div id="sort">
+          <p>Showing <b>20</b> of <b>100</b> items</p>
+
+        </div>
+
+        <div id="appendProd"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module" src="./product.js"></script>
+
+<script type="module">
+  let cont = document.querySelector("#points1");
+  cont = cont.children;
+  for (let x of cont) {
+    x.addEventListener("click", productsCall);
+  }
+
+  let subCont = document.querySelector("#script");
+  subCont = subCont.children;
+  for (let x of subCont) {
+    // console.log(x)
+    x.addEventListener("click", productsCall);
+  }
+
+  function productsCall() {
+    let e = event.target.innerText;
+    let key = "";
+    if (e == "Personal Care") {
+      key = "PC";
+    } else if (e == "Make-up") {
+      key = "MU";
+    } else if (e == "COVID Essentials") {
+      key = "CE";
+    }
+
+    localStorage.setItem("loadData", key);
+    window.location.href = "product.html";
+  }
+</script>
+<script type="module">
+  import { navbar } from "./components/navbar.js";
+  let ad = (document.getElementById("navbar").innerHTML = navbar());
+
+  import { footer } from "./components/navbar.js";
+  let bd = (document.getElementById("footer").innerHTML = footer());
+
+  let arr = JSON.parse(localStorage.getItem("data"));
+  // console.log(arr)
+  if (arr !== null) {
+    let final = document.getElementById("inpt");
+    // console.log(final)
+
+    arr.forEach(function (el) {
+      final.innerText = el.first;
+      final.href = "acinfo.html";
+    });
+  }
+</script>
