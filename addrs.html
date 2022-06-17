@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./navbar.css" />
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>address</title>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+      type="image/x-icon"
+    />
+</head>
+<style>
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .line {
+        width: 70px;
+        border: 1px solid;
+        height: 0;
+        margin-top: 20px;
+    }
+
+    .flex p {
+        font-size: xx-small;
+    }
+
+    #f1 {
+        padding-top: 20px;
+    }
+
+    #header {
+        height: 70px;
+        border-radius: 15px;
+        background-color: #151B39;
+        color: white;
+        padding: 10px 10px;
+        margin-top: 15px;
+    }
+
+    #addr {
+        width: 80%;
+        margin: auto;
+    }
+
+    #form {
+        width: 40%;
+        margin: auto;
+        margin-top: 30px;
+        background-color: white;
+    }
+    #form input{
+        border: 1px solid black;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    button {
+        font-size: larger;
+        border: none;
+        border-radius: 5px;
+        background-color: #24AEB1;
+        color: white;
+        padding: 10px;
+        margin:20px 20px 20px 20px ;
+    }
+
+
+    /* nav */
+    #navbar {
+        height: 100px;
+        width: 100%;
+        background-color: rgb(50, 174, 177) !important;
+        margin-top: -20px;
+    }
+
+    #logo {
+        height: 60px;
+        width: 180px;
+        margin-left: 120px;
+    }
+
+    #logo>img {
+        height: 80px;
+        width: 180px;
+    }
+
+    #top3 {
+        height: 60px;
+        width: 500px;
+        margin-top: 25px;
+    }
+
+    #top3>span {
+        padding-left: 25px;
+        color: white;
+    }
+
+    #box1 {
+        height: 80px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff !important;
+    }
+
+    input {
+        height: 40px;
+        width: 600px;
+        box-sizing: border-box;
+        border: 2px;
+        border-radius: 10px;
+        padding-left: 10px;
+        margin: 30px 15px 0px 10px;
+        /*top rgt btm lft */
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <div id="box1">
+            <a href="./index.html">
+                <div id="logo">
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
+                </div>
+            </a>
+            <div>
+                <input placeholder="Search for medicine & wellness" type="text" class="form-control"
+                    aria-label="Text input with dropdown button" />
+
+            </div>
+            <div id="top3">
+                <span><i class="fa-solid fa-file-lines"></i><span class="anu"><a
+                            style="color: white;text-decoration: none;">Upload</span></span>
+                <span id="ai"><i class="fa-solid fa-cart-shopping prdctt"></i><span id="cart" class="one prdctt"><a
+                            href="./cart.html">Cart</a></span></span> <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                    height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+
+                <span><i class="fa-solid fa-user"></i><span class="anu"></span id="log"><a id="inpt" href="signup.html"
+                        style="text-decoration: none; color:#fff">Sign in / Sign up</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="addr">
+        <div class="flex" id="header">
+            <div>
+                <h1>Order Review</h1>
+            </div>
+            <div class="flex" id="f1">
+                <div><i class="fa-solid fa-bag-shopping"></i>
+                    <p>Your Cart</p>
+                </div>
+                <div class="line"></div>
+                <div><i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    <p>Order Review</p>
+                </div>
+                <div class="line"></div>
+                <div><i class="fa-solid fa-indian-rupee-sign"></i>
+                    <p>Payments Details</p>
+                </div>
+            </div>
+        </div>
+        <div id="form">
+            <h2>Delivery Address</h2>
+            <input type="number" placeholder="Pin Code" id="pin" /><br />
+            <input type="text" placeholder="First Name" id="fname" /><br />
+            <input type="text" placeholder="Last Name" id="lname" /><br />
+            <input type="text" placeholder="Address" id="address" /><br />
+            <input type="text" placeholder="Landmark" id="landmark" /><br />
+            <input type="number" placeholder="Phone Number" id="phone" /><br />
+            <button id="btn">PROCEED</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="module">
+    document.addEventListener("click", (e) => {
+        const isDropdownButton = e.target.matches("[db]");
+        if (!isDropdownButton && e.target.closest("[down2]") != null) return;
+
+        let cd;
+        if (isDropdownButton) {
+            cd = e.target.closest("[down2]");
+            cd.classList.toggle("active");
+        }
+
+        document.querySelectorAll("[down2].active").forEach((dropdown) => {
+            if (dropdown === cd) return;
+            dropdown.classList.remove("active");
+        });
+    });
+
+    document.querySelector("#btn").addEventListener("click", addres);
+    function addres() {
+        var obj = {
+            lastname: document.querySelector("#lname").value,
+            firstname: document.querySelector("#fname").value,
+            address: document.querySelector("#address").value,
+            landmark: document.querySelector("#landmark").value,
+            phonenumber: document.querySelector("#phone").value,
+        };
+        localStorage.setItem("address", JSON.stringify(obj));
+        window.location.href = "payment.html";
+    }
+
+// if(lname.length>0 && fname.length>0){
+//     document.querySelector("#btn").addEventListener("click", addres);
+
+//     function addres() {
+//         var obj = {
+//             lastname: document.querySelector("#lname").value,
+//             firstname: document.querySelector("#fname").value,
+//             address: document.querySelector("#address").value,
+//             landmark: document.querySelector("#landmark").value,
+//             phonenumber: document.querySelector("#phone").value,
+//         };
+//         localStorage.setItem("address", JSON.stringify(obj));
+//         window.location.href = "./pay.html";
+//     }
+
+// }
+// else{
+//     alert("fill the details")
+// }
+</script>
+<script>
+
+    let arr = JSON.parse(localStorage.getItem("data"))
+    // console.log(arr)
+    if (arr !== null) {
+        let final = document.getElementById("inpt")
+        // console.log(final)
+
+        arr.forEach(function (el) {
+            final.innerText = el.first
+            final.href = "acinfo.html"
+        })
+    }
+</script>

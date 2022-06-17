@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A/cInfo</title>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+      type="image/x-icon"
+    />
+    <style>
+        #ac {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            width: 40%;
+            display: flex;
+            margin-top: 10%;
+            justify-content: center;
+        }
+
+        #ac>div {
+            margin-left: 40px;
+        }
+
+        #upper {
+            display: flex;
+            margin-top: 40px;
+            width: 60%;
+            gap: 40px;
+            margin-left: 25%;
+            margin-bottom: -90px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        button {
+            border: 0px;
+            border-radius: 10px;
+            background-color: rgb(50, 174, 177);
+            color: white;
+            width: 160px;
+            height: 35px;
+        }
+
+        /* nav */
+        #navbar {
+            height: 100px;
+            width: 100%;
+            background-color: rgb(50, 174, 177) !important;
+            margin-top: -20px;
+        }
+
+        #logo {
+            height: 60px;
+            width: 180px;
+            margin-left: 120px;
+        }
+
+        #logo>img {
+            height: 80px;
+            width: 180px;
+        }
+
+        #top3 {
+            height: 60px;
+            width: 500px;
+            margin-top: 25px;
+        }
+
+        #top3>span {
+            padding-left: 25px;
+            color: white;
+        }
+
+        #box1 {
+            height: 80px;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        input {
+            height: 40px;
+            width: 600px;
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin: 30px 15px 0px 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="box1">
+            <a href="./index.html">
+                <div id="logo">
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="" />
+                </div>
+            </a>
+            <div>
+                <input placeholder="Search for medicine & wellness" type="text" class="form-control"
+                    aria-label="Text input with dropdown button" />
+            </div>
+            <div id="top3">
+                <span><i class="fa-solid fa-file-lines"></i><span class="anu"><a
+                            style="color: white; text-decoration: none" href="upload.html">Upload</a></span></span>
+                <span id="ai"><i class="fa-solid fa-cart-shopping prdctt"></i><span id="cart"
+                        class="one prdctt">Cart</span></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div id="upper"></div>
+        <div id="ac">
+            <div id="nam"></div>
+            <div id="maa"></div>
+        </div>
+        <br />
+        <br />
+        <button onclick="fun()">LOG OUT</button>
+    </center>
+</body>
+
+</html>
+<script>
+    let detail = JSON.parse(localStorage.getItem("data"));
+    let box1 = document.getElementById("maa");
+
+    detail.forEach(function (el) {
+        let box = document.getElementById("nam");
+
+        let email = document.createElement("p");
+        let p1 = document.createElement("h5");
+        p1.innerText = `EMAIL :${el.email}`;
+
+        let first = document.createElement("p");
+        let last = document.createElement("p");
+        let name = document.createElement("h5");
+        name.innerText = `NAME:${el.first + el.last}`;
+
+        let p2 = document.createElement("h3");
+        p2.innerText = "LOGIN DETAILS";
+
+        let h3 = document.createElement("h3");
+        box.append(p2, p1, email, name, first);
+        box1.append(h3);
+        document.getElementById("ac").append(box, box1);
+    });
+
+    function fun() {
+        localStorage.removeItem("data");
+        window.location.href = "index.html";
+    }
+
+    let arr = [
+        {
+            image:
+                "https://www.netmeds.com/msassets/images/icons/payment_history.svg",
+            title: "payment methods",
+        },
+        {
+            image:
+                "https://www.netmeds.com/msassets/images/icons/medicine_orders.svg",
+            title: "Medicine Orders",
+        },
+        {
+            image: "https://www.netmeds.com/msassets/images/icons/rewards.svg",
+            title: "My Rewards",
+        },
+    ];
+    arr.forEach(function (el) {
+        let box = document.createElement("div");
+        let p = document.createElement("p");
+        let img = document.createElement("img");
+        p.innerText = el.title;
+        img.src = el.image;
+        box.append(img, p);
+        document.getElementById("upper").append(box);
+    });
+</script>

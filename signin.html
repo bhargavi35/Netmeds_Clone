@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signin</title>
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+      type="image/x-icon"
+    />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        #signup {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            padding: 15px;
+            margin-top: 1%;
+            height: 600px;
+            gap: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        a {
+            text-decoration: none !important;
+            color: rgb(194, 65, 65);
+        }
+
+        #form {
+            width: 60%;
+            margin: auto;
+        }
+
+        #form p {
+            font-size: 13px;
+            color: #24aeb1;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        #email,
+        #first,
+        #last {
+            width: 80%;
+            /* margin-top: 10px; */
+            border: none;
+            height: 30px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        #terms {
+            text-align: center;
+            padding: 15px;
+            margin: auto;
+        }
+
+        #terms a,
+        small a {
+            text-decoration: none !important;
+            color: rgb(194, 65, 65) !important;
+        }
+
+
+        #button {
+            width: 160px;
+            height: 35px;
+            margin-left: 2%;
+            margin-top: 15px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            background-color: #24aeb1;
+            border-radius: 8px;
+        }
+
+        img {
+            height: 100%;
+        }
+
+        #sign {
+            margin-top: 80px;
+        }
+
+        /* nav */
+        #navbar {
+            height: 100px;
+            width: 100%;
+            background-color: rgb(50, 174, 177) !important;
+            margin-top: -20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff !important;
+        }
+
+        #logo {
+            height: 60px;
+            width: 180px;
+            margin-left: 120px;
+        }
+
+        #logo>img {
+            height: 80px;
+            width: 180px;
+        }
+
+        #top3 {
+            height: 60px;
+            width: 500px;
+            margin-top: 25px;
+        }
+
+        #top3>span {
+            padding-left: 25px;
+            color: white;
+        }
+
+        #box1 {
+            height: 80px;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+
+        input {
+            height: 40px;
+            width: 600px;
+            box-sizing: border-box;
+            border: 2px;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin: 30px 15px 0px 10px;
+            font-size: 18px;
+        }
+
+        #button {
+            width: 160px;
+            height: 35px;
+            margin-left: 2%;
+            margin-top: 15px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            background-color: #24aeb1;
+            border-radius: 8px;
+        }
+
+        /* otp */
+        .card-header {
+            color: rgb(11, 1, 21) !important;
+            font-size: 20px;
+        }
+
+        small {
+            font-size: 16px;
+
+        }
+
+        .input-container input {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .form-control:focus {
+            box-shadow: none !important;
+            border: 1px solid #3366FF !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="box1">
+            <a href="./index.html">
+                <div id="logo">
+                    <img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" alt="">
+                </div>
+            </a>
+            <div>
+                <input placeholder="Search for medicine & wellness" type="text" class="form-control"
+                    aria-label="Text input with dropdown button" />
+
+            </div>
+            <div id="top3">
+                <span><i class="fa-solid fa-file-lines"></i><span class="anu"><a
+                            style="color: white;text-decoration: none;">Upload</span></span>
+                <span id="ai"><i class="fa-solid fa-cart-shopping prdctt"></i><span id="cart" class="one prdctt"><a
+                            href="./cart.html">Cart</a></span></span> <svg xmlns="http://www.w3.org/2000/svg" width="30"
+                    height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+
+                <span><i class="fa-solid fa-user"></i><span class="anu"></span id="log"><a id="inpt" href="signup.html"
+                        style="text-decoration: none; color:#fff">Sign in / Sign up</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="signup">
+        <div id="image">
+            <img src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png" />
+        </div>
+        <div id="form">
+            <h2>Create Account</h2>
+            <br><br>
+            <p>EMAIL ID</p>
+            <input id="email" type="text" placeholder="Enter your Email Id" />
+            <p>FIRST NAME</p>
+            <input id="first" type="text" placeholder="Your First Name" />
+            <p>LAST NAME</p>
+            <input id="last" type="text" placeholder="Your Last Name" />
+            <p class="mb-2">OTP VERIFICATION</p>
+
+            <div class="card-header p-5">
+                <div>
+                    <small>Code has been send to ******1258</small>
+                </div>
+            </div>
+
+            <div class="input-container d-flex flex-row justify-content-center mt-2">
+                <input type="text" class="m-1 text-center form-control rounded" maxlength="1">
+                <input type="text" class="m-1 text-center form-control rounded" maxlength="1">
+                <input type="text" class="m-1 text-center form-control rounded" maxlength="1">
+                <input type="text" class="m-1 text-center form-control rounded" maxlength="1">
+                <input type="text" class="m-1 text-center form-control rounded" maxlength="1">
+            </div>
+
+            <div>
+                <small>
+                    didn't get the otp
+                    <a href="signup.html" class="text-decoration-none">Resend</a>
+                </small>
+            </div>
+
+            <div class="mt-3 mb-5">
+                <button type="button" id="button" onclick="fun()" class="btn btn-success px-4 verify-btn">
+                    verify</button>
+            </div>
+
+            <!-- <button id="button" onclick="func()">VERIFY</button> -->
+        </div>
+    </div>
+
+    <div id="terms">
+        <p>
+            By continuing you agree to our
+            <span><a href="https://masaischool.com/terms">Terms of Service</a></span>
+            and
+            <span><a href="https://masaischool.com/privacy">Privacy& Legal Policy</a></span>
+        </p>
+    </div>
+</body>
+
+</html>
+<script>
+    let arr = JSON.parse(localStorage.getItem("data")) || [];
+
+
+    function fun() {
+        let e = document.getElementById("email").value;
+        let f = document.getElementById("first").value;
+        let l = document.getElementById("last").value;
+        if (e == "") {
+            alert("Enter Email");
+            return;
+        }
+        if (f == "") {
+            alert("Enter First Name");
+            return;
+        }
+        if (l == "") {
+            alert("Enter Last Name");
+            return;
+        }
+        else {
+            let obj = {
+                email: e,
+                first: f,
+                last: l,
+            };
+            arr.push(obj);
+            console.log(arr.email);
+            localStorage.setItem("data", JSON.stringify(arr));
+            window.location.href = "index.html";
+            alert("Sign up sucesseful")
+        }
+    }
+
+    let bbb = JSON.parse(localStorage.getItem("data"))
+    if (bbb !== null) {
+        let final = document.getElementById("inpt")
+        bbb.forEach(function (el) {
+            final.innerText = el.first
+            final.href = "acinfo.html"
+        })
+    }
+
+</script>
