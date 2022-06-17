@@ -311,12 +311,12 @@
 
     let data1 = JSON.parse(localStorage.getItem("cartData")) || {};
 
-  let data = [];
-  for (let i in data1) {
-    data.push(data1[i]);
-  }
+    let data = [];
+    for (let i in data1) {
+        data.push(data1[i]);
+    }
 
-  console.log(data);
+    console.log(data);
     var bag = 0;
     var bag1 = 0;
 
@@ -369,7 +369,7 @@
         var uf = document.createElement("p");
         uf.innerText = el.phonenumber;
 
-        box.append(e,n,d,uf);
+        box.append(e, n, d, uf);
     }
     address1();
 </script>

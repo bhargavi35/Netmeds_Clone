@@ -1,6 +1,3 @@
 # netmeds
 
-Netmeds Clone App
-
-solo project 
-
+Solo Project on Netmeds clone website

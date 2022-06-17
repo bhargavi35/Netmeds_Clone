@@ -630,10 +630,12 @@ button {
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-.catFocusC button{
+
+.catFocusC button {
     padding: 10px;
     margin: auto;
 }
+
 .catFocusC img {
     border-radius: 10px;
     width: 224px;
@@ -1241,9 +1243,9 @@ button {
 
 /* beauty */
 
-#heading h2{
+#heading h2 {
     font-size: 25px;
     margin-bottom: 30px;
     font-weight: 600;
-    margin-top: 4%; 
+    margin-top: 4%;
 }
