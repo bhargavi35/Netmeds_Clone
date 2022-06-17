@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wellness</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyaFNqayyChvs7BIpGRfBHfQhquJ2ALB2uZw&usqp=CAU"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body id="body">
+    <div id="navbar"></div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100"
+                    src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654249719_Wellness_home.jpg"
+                    alt="First slide" />
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1654247920_Wellness_Home_title.jpg"
+                    alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1645554707_Guide-1680px-x-320_Web.png"
+                    alt="Third slide" />
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Popular Categories -->
+    <div id="shopbyCat">
+        <h2>Popular Categories</h2>
+        <div id="shopbyA">
+            <a href="">
+                <div class="ShopbyA">
+                    <img src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" alt="" />
+                    <h5>Covid Essentials</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="ShopbyA">
+                    <img src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_2.jpg" alt="" />
+                    <h5>S exual wellness</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="ShopbyA">
+                    <img src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_1.jpg"
+                        alt="" />
+                    <h5>Vitamins and supplements</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="ShopbyA">
+                    <img src="https://www.netmeds.com/images/category/491/thumb/homeopathy_1.jpg" alt="" />
+                    <h5>Homeopathy</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="ShopbyA">
+                    <img src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg" alt="" />
+                    <h5>Ayurvedic</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Supplement of the week -->
+    <div id="splmnt">
+        <h2>Supplement of the week</h2>
+    </div>
+    <div id="itemContnr">
+        <div id="item_container">
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">15% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/851151/ostocalcium_plus_chewable_tablet_30_s_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle">Ostocalcium Plus Chewable Tablet 30's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 152.00</p>MRP:
+                            <p>Rs. 180.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">18% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/325547/coq_30mg_capsule_10s_39957_0_1.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> COQ 30mg Capsule 10'S</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 320.00</p>MRP:
+                            <p>Rs. 390.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">18% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/409597/coq_300mg_softgel_15_s_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> COQ 300mg Softgel 15'S</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 1488.00</p>MRP:
+                            <p>Rs. 1815.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">25% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/934750/ourdaily_vitamin_e_softgel_capsules_10s_0_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> OurDaily Vitamin E Softgel Capsules 10's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 29.25</p>MRP:
+                            <p>Rs. 39.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">15% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/851151/ostocalcium_plus_chewable_tablet_30_s_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle">Ostocalcium Plus Chewable Tablet 30's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 152.00</p>MRP:
+                            <p>Rs. 180.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="TopbrndBtn">
+                <button id="leftbtn1" type="button"><img
+                        src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_prev.svg"
+                        alt=""></button>
+            </div>
+
+            <div id="TopbrndBtn1"><button id="rightbtn1" type="button"><img
+                        src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_next.svg"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Supplement of the week -->
+    <div id="splmnt">
+        <h2>New on Netmeds</h2>
+    </div>
+    <div id="itemContnr">
+        <div id="item_container">
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">15% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1023625/clean_dry_daily_intimate_wash_190_ml_321938_0_4.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle">Ostocalcium Plus Chewable Tablet 30's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 152.00</p>MRP:
+                            <p>Rs. 180.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">18% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1024230/mothercare_all_we_know_baby_lotion_300_ml_0_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> COQ 30mg Capsule 10'S</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 320.00</p>MRP:
+                            <p>Rs. 390.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">18% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1018854/cetaphil_gentle_baby_wipes_40s_0_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> COQ 300mg Softgel 15'S</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 1488.00</p>MRP:
+                            <p>Rs. 1815.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">25% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1028535/origin_nutrition_vegan_protein_powder_coffee_caramel_flavour_258_g_0_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle"> OurDaily Vitamin E Softgel Capsules 10's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 29.25</p>MRP:
+                            <p>Rs. 39.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="inner_item_container" id="p10">
+                <div>
+                    <p class="short_des">15% off</p>
+                    <img src="https://www.netmeds.com/images/product-v1/150x150/1028532/origin_nutrition_vegan_protein_powder_unflavoured_250_g_0_0.jpg"
+                        alt="">
+                </div>
+                <div class="text_box">
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="description">
+                        <div class="tittle">Ostocalcium Plus Chewable Tablet 30's</div>
+
+                        <div class="price">Best price:
+                            <p>Rs. 152.00</p>MRP:
+                            <p>Rs. 180.00 </p>
+                        </div>
+                        <button id="btn7" class="btn_add_cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="TopbrndBtn">
+                <button id="leftbtn1" type="button"><img
+                        src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_prev.svg"
+                        alt=""></button>
+            </div>
+
+            <div id="TopbrndBtn1"><button id="rightbtn1" type="button"><img
+                        src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_next.svg"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership -->
+    <div id="Getmedicine">
+        <div class="gtmdcn1">
+            <img src="https://www.netmeds.com/assets/gloryweb/images/icons/new-icons/subscribe_and_schedule.svg" alt="">
+        </div>
+        <div class="gtmdcn2">
+            <h3>Get medicine refill every month</h3>
+            <ul>
+                <li>Subscribe and schedule next deliveries</li>
+                <li>Subscribe for 12 months and get the last month free. *T&C Apply</li>
+            </ul>
+        </div>
+        <div class="gtmdcn3">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Health Concerns -->
+    <div id="TopHlthCncrn">
+        <h2>Health Concerns</h2>
+    </div>
+
+    <div id="HlthCncrn">
+        <div id="hlthCncrn">
+            <a href="">
+                <div class="hlthCncrn">
+                    <div class="hlthCncrnimgdiv">
+                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg?v=1" alt="">
+                    </div>
+                    <h5>Lung Care</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="hlthCncrn">
+                    <div class="hlthCncrnimgdiv">
+                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg?v=1"
+                            alt="">
+                    </div>
+                    <h5>Weight Care</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="hlthCncrn">
+                    <div class="hlthCncrnimgdiv">
+                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/women-s-care.jpg?v=1"
+                            alt="">
+                    </div>
+                    <h5>Women's Care</h5>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="hlthCncrn">
+                    <div class="hlthCncrnimgdiv">
+                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg?v=1"
+                            alt="">
+                    </div>
+                    <h5>Bone And Joint Plain</h5>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="hlthCncrn">
+                    <div class="hlthCncrnimgdiv">
+                        <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg?v=1"
+                            alt="">
+                    </div>
+                    <h5>Cold And Fever</h5>
+                </div>
+            </a>
+        </div>
+
+        <div id="TopbrndBtn">
+            <button id="leftbtn1" type="button"><img
+                    src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_prev.svg"
+                    alt=""></button>
+        </div>
+
+        <div id="TopbrndBtn1"><button id="rightbtn1" type="button"><img
+                    src="https://www.netmeds.com/assets/version1649433944/gloryweb/images/icons/white_next.svg"
+                    alt=""></button></div>
+    </div>
+
+    <!-- Advice From Health Experts -->
+    <div id="Advice">
+        <h2>Advice From Health Experts</h2>
+        <h5><a href="" style="font-weight: 600;">View All ></a></h5>
+
+
+        <div id="Advice1">
+            <div id="advc">
+                <a href="">
+                    <div class="advc">
+                        <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655103844_White-Turmeric_480x180.jpg"
+                            alt="">
+                        <h5>White Turmeric: 5 Incredible Health Reasons To Add..</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="advc">
+                        <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655104016_Karkatshringi_480x180.jpg"
+                            alt="">
+                        <h5>Karkatshringi: Health Benefits, Uses, Dosage, Effe..</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="advc">
+                        <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1655101352_Vaginal-Agenesis_480x180.jpg"
+                            alt="">
+                        <h5>Vaginal Agenesis: Causes, Symptoms And Treatment..</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="advc">
+                        <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/World_BloodDonor_Day_Featuredimage_480x180.jpg"
+                            alt="">
+                        <h5>World Blood Donor Day: 5 Common Myths Debunked..</h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="advc">
+                        <img src="https://www.netmeds.com/images/cms/magefan_blog/nmslite/1654848638_Atibala_480x180.jpg"
+                            alt="">
+                        <h5>Atibala: Uses, Benefits, Indications, Doshas, Dosa..</h5>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer1">
+        <p><span>Popular Wellness Products:</span>Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500
+            gm |
+            Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla
+            Flavour
+            400
+            gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan
+            Excella
+            Pro
+            1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate
+            Powder
+            500 gm | Climax Spray for Men 12 gm
+            <br>
+            <span>Top-Selling Health Packages:</span> AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds
+            Swasthya
+            |
+            Diabetic Checkup | Aarogyam 1.7 | Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds
+            Swasthya
+            <br>
+            <span> PlusTop-Selling Lab Tests: </span>Complete Blood Count (CBC)/Complete Hemogram | LIVER FUNCTION
+            TEST
+            |
+            Blood Glucose Fasting (FBS) | THYROID PROFILE -TOTAL(T3,T4&TSH) | Fever Profile | Urine Routine &
+            Microscopy
+            | Hemoglobin A1C
+            (HbA1c) | 25-OH Vitamin D (TOTAL)/Vitamin D Total 25 Hydroxy | Uric Acid | Maternal screen-1st Trimester
+            Dual
+            Marker test
+            <br>
+            <span> Top-Selling Radiology Tests: </span>
+            Ultrasound Whole Abdomen | MRI Scan Brain | CT Scan Brain | ECHO | X Ray Chest PA
+            View | PET Scan | ECG | Ultrasound Pelvis | 3T MRI Scan Brain | CT Scan Chest
+            <br>
+            <span>Most Viewed Health Articles:</span>
+            Chandraprabha Vati - Uses, Functions And Therapeutic Benefits | Amla: Benefits, Uses
+            For Hair and Health Conditions, Supplements And Recipes | Amazing Benefits Of Chyawanprash For
+            Bolstering
+            Immunity And Vitality | Arogyavardhini Vati - Uses, Functions And Therapeutic Benefits | Amazing
+            Benefits Of
+            Betel Leaves Nobody Told You
+        </p>
+        <h5>Welcome to Netmeds.com! India's Leading Online Pharmacy!</h5>
+        <p>With a dynamic legacy of over 100 years in the pharma business, it comes as no surprise that Netmeds.com
+            is
+            the
+            first choice of over 4 million+ satisfied customers when it comes to an online pharmacy in India.
+            Netmeds.com
+            has a pan India presence as we deliver health care essentials to every state in the country. We take
+            your
+            health
+            seriously at Netmeds.com. Be it purchasing medicines online, lab tests or online doctor consultations,
+            we've
+            got
+            it all covered for our customers!</p>
+        <h5>Take the Worry Out of Buying Medicines! Purchase Medicines Online Anytime, Anywhere!</h5>
+        <p>Get everything you need at Netmeds.com to take care of your health right from high-quality, affordable,
+            authentic
+            prescription medicines, Over-The-Counter pharmaceuticals products to general health care products,
+            Ayurveda,
+            Unani and Homeopathy medicines.
+            Buy medicines online at Netmeds.com from the comfort of your home and we will take care of the rest! We
+            will
+            ensure that the life-saving drugs reach your doorstep without a hitch. Do away with the hassle of
+            driving to
+            the
+            medical store, waiting in line, or even remembering your refills! Netmed.com will sort out those
+            problems
+            for
+            you effectively so that you can lead a healthy and full life!
+
+            Ordering medicines online at Netmeds.com is just a simple 4 step process. Browse through our wide range
+            of
+            health care products, add them to your cart, uploading your prescription (if required) and proceed to
+            checkout!
+
+            With Netmed.com, rest assured that your health will be in safe hands!</p>
+        <h5>Buying medicines online</h5>
+        <p>At Netmeds.com, we ensure that you get high-quality life-saving medicines are delivered to you on time.
+            Order
+            medicines online at your convenience from across the country. We also deliver Ayurvedic, Homeopathic,
+            Unani
+            and
+            Over-The-Counter (OTC) products to over 19,000 pin codes across the country!</p>
+        <h5>Medicine Subscription</h5>
+        <p>Remembering to refilling medicines month on month to address chronic conditions can be a hassle. Netmeds'
+            subscription service will ensure that you never run out of these vital medicines. Just set it up and
+            your
+            medicines will get refilled and delivered automatically every month to your doorstep!</p>
+        <h5>Netmeds First</h5>
+        <p>Netmeds First is our loyalty programme which puts you and your health First! First members can get an
+            extra
+            2.5%
+            NMS Cashback (up to INR 100 per order) on prescription medication ordered using the membership. Members
+            are
+            also
+            eligible for free delivery, priority processing, and free online doctor consultations!</p>
+        <h5>Diagnostics</h5>
+        <p>Do you find yourself constantly putting off getting your lab tests done because it's inconvenient to
+            schedule
+            them or because they are expensive? Visit Netmed.com to book lab tests and health checkup packages
+            online
+            from
+            well-reputed, certified diagnostic labs according to your convenience and at affordable rates. We will
+            also
+            make
+            you</p>
+        <h5>Online Doctor Consultation</h5>
+        <p>Are the long queues at hospitals and clinics putting you off? At Netmeds.com, we realize that your time
+            and
+            health are precious. Consult with top-notch doctors online 24/7 at your convenience through our online
+            doctor
+            consultation service!</p>
+        <h5>Why Choose Netmeds?</h5>
+        <p>
+
+        <ul id="ul">
+            <li>100+ years of experience in the pharma sector</li>
+            <li>Vital medicines delivered across the country</li>
+            <li>Trust of more than 4 million+ loyal customers</li>
+            <li>Our team is made up of highly experienced pharmacists & healthcare professionals</li>
+            <li>A wide array of healthcare services available for your convenience</li>
+            <li>We stock only genuine medicines & healthcare products</li>
+        </ul>
+        </p>
+        <h5>Our Awards and Recognition</h5>
+        <p>We at Netmeds.com know how crucial medicine is to treating health conditions and we are extremely proud
+            to be
+            at
+            the forefront of the online medicine industry. Netmeds.com offers its customers a reliable online
+            pharmacy
+            service and as a testament to our commitment, we are regularly recognized and honoured with awards. We
+            are
+            pleased to highlight some of our awards here and we aim to continue adding more feathers to our cap!
+            We have bagged the 'Health Tech Start-Up of the Year' at the NDTV Unicorn Awards 2016. We are also proud
+            that we
+            have been selected as Asia's Most Promising Brand 2018' by Int+ WCRC International.
+
+            We have been named as the 'Best Digital Healthcare Start-up' by ET Now World Health and Wellness
+            Congress in
+            2019. We were also recognized by ET Now World Health and Wellness Congress as the 'Digital Healthcare
+            Company of
+            the year' in 2019.
+        </p>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="./wellness.js"></script>
+
+<script type="text/javascript">
+    var swiper = new Swiper(".card_slider", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        speed: 1000,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+
+</script>
+
+<script type="module">
+    import { navbar } from "./components/navbar.js";
+    let ad = document.getElementById("navbar").innerHTML = navbar();
+
+
+    import { footer } from "./components/navbar.js";
+    let bd = document.getElementById("footer").innerHTML = footer();
+
+
+    let arr = JSON.parse(localStorage.getItem("data"))
+    // console.log(arr)
+    if (arr !== null) {
+        let final = document.getElementById("inpt")
+        // console.log(final)
+
+        arr.forEach(function (el) {
+            final.innerText = el.first
+            final.href = "acinfo.html"
+        })
+    }
+</script>
