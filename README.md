@@ -27,6 +27,7 @@ Vercel :https://netmeds-plum.vercel.app/
 ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
+
   ![Landing Page](https://miro.medium.com/max/786/1*w2Rg4O2QMTSGEAeyouPfyg.png)
 
 - **Log-in Page**
