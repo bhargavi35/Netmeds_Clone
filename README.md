@@ -34,7 +34,7 @@ Vercel :https://netmeds-plum.vercel.app/
 
   ![Landing Page](https://miro.medium.com/max/786/1*Y1__jPoIdmSf6XruWKukPg.png)
 
-- ** Payment Page**
+- **Payment Page**
 
   ![Landing Page](https://miro.medium.com/max/786/1*TyLodT1H6sO3mAwqhJ3r5A.png)
 
