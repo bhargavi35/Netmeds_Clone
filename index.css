@@ -1249,3 +1249,17 @@ button {
     font-weight: 600;
     margin-top: 4%;
 }
+
+@media (min-width: 300px) and (max-width: 400px) {
+    *{
+        font-size: 50%;
+        margin: 2%;
+        padding: 2%;
+    }
+    .carouselExampleIndicators{
+        font-size: large;
+    }
+    .top_category{
+        display:none;
+    }
+}
