@@ -1,6 +1,6 @@
-# Fresly-clone-website
+# Netmed's-clone-website
 
-This was a individual project made by me in 5 days.
+This was an individual project made by me in 5 days.
 
 1)Bhargavi
 
